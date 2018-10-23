@@ -1,0 +1,10 @@
+rulesDirectory:
+  - tslint-eslint-rules
+extends:
+  - tslint-eslint-rules # should use only in `rulesDirectory` but not working as expected
+  - ./eslint-rules/best-practices.yml
+  - ./eslint-rules/errors.yml
+  - ./eslint-rules/es6.yml
+  - ./eslint-rules/variables.yml
+  - ./eslint-rules/style.yml
+  

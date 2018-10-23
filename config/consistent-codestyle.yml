@@ -1,0 +1,28 @@
+extends:
+  - tslint-consistent-codestyle
+
+rules:
+  no-collapsible-if: 
+    severity: error
+
+  early-exit: 
+    severity: error
+    options:
+      max-length: 5
+
+  no-accessor-recursion:
+    severity: error
+
+  no-else-after-return:
+    severity: error
+  
+  # Disabled as it does not work as expected at the moment
+  # no-unnecessary-type-annotation:
+  #   severity: error
+
+  no-unused:
+    severity: error
+
+  no-var-before-return:
+    severity: error
+    options: allow-destructuring

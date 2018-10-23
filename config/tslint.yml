@@ -1,0 +1,28 @@
+extends:
+  - tslint:recommended
+  - ./eslint-rules.yml
+  - ./consistent-codestyle.yml
+
+rules:
+  object-literal-sort-keys:
+    severity: none
+  
+  no-var-requires:
+    severity: none
+
+  strict-boolean-expressions:
+    severity: none
+
+  max-line-length:
+    severity: error
+    options: [120]
+  
+  no-boolean-literal-compare:
+    severity: error
+
+  ordered-imports:
+    severity: error
+    options:
+      grouped-imports: true
+      import-sources-order: any
+      named-imports-order: any

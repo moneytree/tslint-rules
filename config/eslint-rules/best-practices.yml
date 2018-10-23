@@ -1,0 +1,100 @@
+rules:
+  # specify the maximum cyclomatic complexity allowed in a program
+  cyclomatic-complexity: 
+    severity: none
+    options: 11
+
+  # specify curly brace conventions for all control statements
+  curly:
+    severity: error
+
+  # require default case in switch statements
+  switch-default:
+    severity: error
+
+
+  # require the use of === and !==
+  triple-equals:
+    severity: error
+
+  # make sure for-in loops have an if statement
+  forin:
+    severity: error
+
+  # disallow the use of alert, confirm, and prompt
+  ban:
+    severity: warning
+    options:
+      - alert
+      - confirm
+      - prompt
+
+  # disallow use of arguments.caller or arguments.callee
+  no-arg:
+    severity: error
+
+  # disallow empty functions, except for standalone funcs/arrows
+  no-empty:
+    severity: error
+
+  # disallow use of eval()
+  no-eval:
+    severity: error
+
+  # disallow fallthrough of case statements
+  no-switch-case-fall-through:
+    severity: error
+
+  # disallow this keywords outside of classes or class-like objects
+  no-invalid-this:
+    severity: none
+
+  # disallow use of labels for anything other then loops and switches
+  label-position:
+    severity: error
+
+  # disallow magic numbers
+  no-magic-numbers:
+    severity: none
+
+  # disallow use of multiple spaces
+  no-multi-spaces:
+    severity: error
+    options:
+      exceptions:
+        PropertyAssignment: false
+
+  # disallow use of new operator when not part of the assignment or comparison
+  # disallow usage of expressions in statement position
+  no-unused-expression: 
+    severity: error
+    options:
+      - allow-fast-null-checks
+
+  # disallows creating new instances of String, Number, and Boolean
+  no-construct:
+    severity: error
+
+  # disallow usage of __proto__ property
+  ter-no-proto:
+    severity: error
+
+  # disallow declaring the same variable more then once
+  no-duplicate-variable:
+    severity: error
+
+  # disallow use of `javascript:` urls.
+  ter-no-script-url:
+    severity: error
+
+  # disallow comparisons where both sides are exactly the same
+  ter-no-self-compare:
+    severity: error
+
+  # restrict what can be thrown as an exception
+  no-string-throw:
+    severity: error
+
+  # require use of the second argument for parseInt()
+  radix:
+    severity: error

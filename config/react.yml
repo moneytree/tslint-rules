@@ -1,0 +1,7 @@
+extends:
+  - ./tslint.yml
+  - tslint-react
+
+rules:
+  jsx-boolean-value:
+    severity: none

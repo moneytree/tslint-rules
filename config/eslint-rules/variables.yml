@@ -1,0 +1,13 @@
+rules:
+
+  # disallow declaration of variables already declared in the outer scope
+  no-shadowed-variable:
+    severity: error
+
+  # disallow declaration of variables that are not used in the code
+  # no-unused-variable:
+  #   severity: error
+
+  # disallow use of variables before they are defined
+  no-use-before-declare:
+    severity: error
