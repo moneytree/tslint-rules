@@ -26,3 +26,17 @@ rules:
       grouped-imports: true
       import-sources-order: any
       named-imports-order: any
+
+  naming-convention:
+    - true
+    -
+      type: default
+      format: camelCase
+      leadingUnderscore: forbid
+      trailingUnderscore: forbid
+    -
+      type: parameter
+      modifiers: unused
+      leadingUnderscore: allow
+
+  variable-name: false
