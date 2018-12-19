@@ -16,11 +16,6 @@ rules:
       - 1tbs
       - { allowSingleLine: true }
 
-  # requires camel case names
-  variable-name:
-    severity: error
-    options: check-format
-
   # disallows padding inside computed properties
   ter-computed-property-spacing:
     severity: error

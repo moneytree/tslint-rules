@@ -2,10 +2,10 @@ extends:
   - tslint-consistent-codestyle
 
 rules:
-  no-collapsible-if: 
+  no-collapsible-if:
     severity: error
 
-  early-exit: 
+  early-exit:
     severity: error
     options:
       max-length: 5
@@ -15,7 +15,7 @@ rules:
 
   no-else-after-return:
     severity: error
-  
+
   # Disabled as it does not work as expected at the moment
   # no-unnecessary-type-annotation:
   #   severity: error
@@ -26,3 +26,34 @@ rules:
   no-var-before-return:
     severity: error
     options: allow-destructuring
+
+  naming-convention:
+    severity: error
+    options:
+      -
+        type: default
+        format: camelCase
+        leadingUnderscore: forbid
+        trailingUnderscore: forbid
+
+      -
+        type: parameter
+        modifiers: unused
+        leadingUnderscore: allow
+
+      -
+        type: variable
+        modifiers: [global, const]
+        format: [camelCase, UPPER_CASE]
+
+      -
+        type: interface
+        prefix: I
+
+      -
+        type: type
+        format: PascalCase
+
+      -
+        type: enumMember
+        format: PascalCase
