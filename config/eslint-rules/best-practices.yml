@@ -1,27 +1,27 @@
 rules:
-  # specify the maximum cyclomatic complexity allowed in a program
+  # specifies the maximum cyclomatic complexity allowed in a program
   cyclomatic-complexity:
     severity: none
     options: 11
 
-  # specify curly brace conventions for all control statements
+  # specifies curly brace conventions for all control statements
   curly:
     severity: error
 
-  # require default case in switch statements
+  # requires default case in switch statements
   switch-default:
     severity: error
 
 
-  # require the use of === and !==
+  # requires the use of === and !==
   triple-equals:
     severity: error
 
-  # make sure for-in loops have an if statement
+  # makes sure for-in loops have an if statement
   forin:
     severity: error
 
-  # disallow the use of alert, confirm, and prompt
+  # disallows the use of alert, confirm, and prompt
   ban:
     severity: warning
     options:
@@ -29,43 +29,43 @@ rules:
       - confirm
       - prompt
 
-  # disallow use of arguments.caller or arguments.callee
+  # disallows use of arguments.caller or arguments.callee
   no-arg:
     severity: error
 
-  # disallow empty functions, except for standalone funcs/arrows
+  # disallows empty functions, except for standalone funcs/arrows
   no-empty:
     severity: error
 
-  # disallow use of eval()
+  # disallows use of eval()
   no-eval:
     severity: error
 
-  # disallow fallthrough of case statements
+  # disallows fallthrough of case statements
   no-switch-case-fall-through:
     severity: error
 
-  # disallow this keywords outside of classes or class-like objects
+  # disallows this keywords outside of classes or class-like objects
   no-invalid-this:
     severity: none
 
-  # disallow use of labels for anything other then loops and switches
+  # disallows use of labels for anything other then loops and switches
   label-position:
     severity: error
 
-  # disallow magic numbers
+  # disallows magic numbers
   no-magic-numbers:
     severity: none
 
-  # disallow use of multiple spaces
+  # disallows use of multiple spaces
   no-multi-spaces:
     severity: error
     options:
       exceptions:
         PropertyAssignment: false
 
-  # disallow use of new operator when not part of the assignment or comparison
-  # disallow usage of expressions in statement position
+  # disallows use of new operator when not part of the assignment or comparison
+  # disallows usage of expressions in statement position
   no-unused-expression:
     severity: error
     options:
@@ -75,26 +75,26 @@ rules:
   no-construct:
     severity: error
 
-  # disallow usage of __proto__ property
+  # disallows usage of __proto__ property
   ter-no-proto:
     severity: error
 
-  # disallow declaring the same variable more then once
+  # disallows declaring the same variable more then once
   no-duplicate-variable:
     severity: error
 
-  # disallow use of `javascript:` urls.
+  # disallows use of `javascript:` urls.
   ter-no-script-url:
     severity: error
 
-  # disallow comparisons where both sides are exactly the same
+  # disallows comparisons where both sides are exactly the same
   ter-no-self-compare:
     severity: error
 
-  # restrict what can be thrown as an exception
+  # restricts what can be thrown as an exception
   no-string-throw:
     severity: error
 
-  # require use of the second argument for parseInt()
+  # requires use of the second argument for parseInt()
   radix:
     severity: error

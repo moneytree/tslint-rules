@@ -1,91 +1,91 @@
 rules:
-  # disallow or enforce trailing commas (recommended)
+  # disallows or enforce trailing commas (recommended)
   trailing-comma:
     severity: error
     options:
       multiline: never
       singleline: never
 
-  # disallow assignment in conditional expressions
+  # disallows assignment in conditional expressions
   no-conditional-assignment:
     severity: error
 
-  # disallow use of console
+  # disallows use of console
   no-console:
     severity: warning
 
-  # disallow use of constant expressions in conditions
+  # disallows use of constant expressions in conditions
   no-constant-condition:
     severity: warning
 
-  # disallow control characters in regular expressions
+  # disallows control characters in regular expressions
   no-control-regex:
     severity: error
 
-  # disallow use of debugger
+  # disallows use of debugger
   no-debugger:
     severity: error
 
-  # disallow a duplicate case label.
+  # disallows a duplicate case label.
   no-duplicate-case:
     severity: error
 
-  # disallow empty statements
+  # disallows empty statements
   no-empty:
     severity: error
 
-  # disallow the use of empty character classes in regular expressions
+  # disallows the use of empty character classes in regular expressions
   no-empty-character-class:
     severity: error
 
-  # disallow assigning to the exception in a catch block
+  # disallows assigning to the exception in a catch block
   no-ex-assign:
     severity: error
 
-  # disallow double-negation boolean casts in a boolean context
+  # disallows double-negation boolean casts in a boolean context
   no-extra-boolean-cast:
     severity: error
 
-  # disallow unnecessary semicolons
+  # disallows unnecessary semicolons
   no-extra-semi:
     severity: error
 
-  # disallow function or variable declarations in nested blocks
+  # disallows function or variable declarations in nested blocks
   no-inner-declarations:
     severity: error
 
-  # disallow invalid regular expression strings in the RegExp constructor
+  # disallows invalid regular expression strings in the RegExp constructor
   no-invalid-regexp:
     severity: error
 
-  # disallow irregular whitespace outside of strings and comments
+  # disallows irregular whitespace outside of strings and comments
   ter-no-irregular-whitespace:
     severity: error
 
-  # disallow multiple spaces in a regular expression literal
+  # disallows multiple spaces in a regular expression literal
   no-regex-spaces:
     severity: error
 
-  # disallow sparse arrays
+  # disallows sparse arrays
   ter-no-sparse-arrays:
     severity: error
 
-  # Avoid code that looks like two expressions but is actually one
+  # avoid code that looks like two expressions but is actually one
   no-unexpected-multiline:
     severity: error
 
-  # disallow return/throw/break/continue inside finally blocks
+  # disallows return/throw/break/continue inside finally blocks
   no-unsafe-finally:
     severity: error
 
-  # disallow comparisons with the value NaN
+  # disallows comparisons with the value NaN
   use-isnan:
     severity: error
 
-  # ensure JSDoc comments are valid
+  # ensures JSDoc comments are valid
   valid-jsdoc:
     severity: none
 
-  # ensure that the results of typeof are compared against a valid string
+  # ensures that the results of typeof are compared against a valid string
   valid-typeof:
     severity: error

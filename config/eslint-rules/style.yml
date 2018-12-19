@@ -1,36 +1,36 @@
 rules:
-  # enforce spacing inside array brackets
+  # enforces spacing inside array brackets
   array-bracket-spacing:
     severity: error
     options: never
 
-  # enforce spacing inside single-line blocks
+  # enforces spacing inside single-line blocks
   block-spacing:
     severity: error
     options: always
 
-  # enforce one true brace style
+  # enforces one true brace style
   brace-style:
     severity: error
     options:
       - 1tbs
       - { allowSingleLine: true }
 
-  # require camel case names
+  # requires camel case names
   variable-name:
     severity: error
     options: check-format
 
-  # disallow padding inside computed properties
+  # disallows padding inside computed properties
   ter-computed-property-spacing:
     severity: error
     options: never
 
-  # enforce newline at the end of file, with no multiple empty lines
+  # enforces newline at the end of file, with no multiple empty lines
   eofline:
     severity: error
 
-  # enforce spacing between functions and their invocations
+  # enforces spacing between functions and their invocations
   ter-func-call-spacing:
     severity: error
     options: never
@@ -39,7 +39,7 @@ rules:
   indent: false
   ter-indent:
     severity: error
-    options: 
+    options:
       - 2
       -
         SwitchCase: 1
@@ -59,12 +59,12 @@ rules:
         # ImportDeclaration: 1
         # flatTernaryExpressions: false
 
-  # disallow mixed 'LF' and 'CRLF' as linebreaks
+  # disallows mixed 'LF' and 'CRLF' as linebreaks
   linebreak-style:
     severity: error
     options: LF
 
-  # specify the maximum length of a line in your program
+  # specifies the maximum length of a line in your program
   ter-max-len:
     severity: error
     options:
@@ -77,57 +77,57 @@ rules:
         ignoreStrings: true
         ignoreTemplateLiterals: true
 
-  # specify the max number of lines in a file
+  # specifies the max number of lines in a file
   max-file-line-count:
     severity: warning
     options: 500
 
-  # disallow the omission of parentheses when invoking a constructor with no arguments
+  # disallows the omission of parentheses when invoking a constructor with no arguments
   new-parens:
     severity: error
 
-  # allow/disallow an empty newline after var statement
+  # allows/disallows an empty newline after var statement
   ter-newline-after-var:
     severity: none
 
-  # disallow use of bitwise operators
+  # disallows use of bitwise operators
   no-bitwise:
     severity: error
 
-  # disallow mixed spaces and tabs for indentation
+  # disallows mixed spaces and tabs for indentation
   ter-no-mixed-spaces-and-tabs:
     severity: error
 
-  # disallow multiple empty lines and only one newline at the end
+  # disallows multiple empty lines and only one newline at the end
   no-consecutive-blank-lines:
     severity: error
     options: 2
 
-  # disallow trailing whitespace at the end of lines
+  # disallows trailing whitespace at the end of lines
   no-trailing-whitespace:
     severity: error
 
-  # require padding inside curly braces
+  # requires padding inside curly braces
   object-curly-spacing:
     severity: error
     options: always
 
-  # allow just one var statement per function
+  # allows just one var statement per function
   one-variable-per-declaration:
     severity: error
     options: ignore-for-loop
 
-  # disallow padding within blocks
+  # disallows padding within blocks
   ter-padded-blocks:
     severity: error
     options: never
 
-  # require quotes around object literal property names
+  # requires quotes around object literal property names
   object-literal-key-quotes:
     severity: error
     options: as-needed
 
-  # specify whether double or single quotes should be used
+  # specifies whether double or single quotes should be used
   quotemark:
     severity: error
     options:
@@ -135,7 +135,7 @@ rules:
       - avoidEscape
       - jsx-double
 
-  # require or disallow use of semicolons instead of ASI
+  # requires or disallows use of semicolons instead of ASI
   semicolon:
     severity: error
     options: always
@@ -143,12 +143,12 @@ rules:
   sort-imports:
     severity: none
 
-  # require or disallow spaces inside parentheses
+  # requires or disallows spaces inside parentheses
   space-in-parens:
     severity: error
     options: never
 
-  # require or disallow a space immediately following the # or /* in a comment
+  # requires or disallows a space immediately following the # or /* in a comment
   comment-format:
     severity: error
     options:
