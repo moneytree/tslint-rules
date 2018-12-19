@@ -29,3 +29,7 @@ rules:
 
   no-floating-promises:
     severity: error
+
+  # override tslint:recommended in the favour to naming-convention rules
+  variable-name:
+    severity: none
