@@ -6,37 +6,37 @@ rules:
       - as-needed
       - requireReturnForObjectLiteral: false
 
-  # require parens in arrow function arguments
+  # requires parens in arrow function arguments
   arrow-parens: false
   ter-arrow-parens:
     severity: error
     options:
       - as-needed
       - requireForBlockBody: true
- 
-  # require space before/after arrow function's arrow
+
+  # requires space before/after arrow function's arrow
   ter-arrow-spacing:
     severity: error
     options:
       before: true
       after: true
 
-  # require let or const instead of var
+  # requires let or const instead of var
   no-var-keyword:
     severity: error
 
-  # require method and property shorthand syntax for object literals
+  # requires method and property shorthand syntax for object literals
   object-literal-shorthand:
     severirty: error
 
-  # suggest using arrow functions as callbacks
+  # suggests using arrow functions as callbacks
   ter-prefer-arrow-callback:
     severirty: error
     options:
       allowNamedFunctions: false
       allowUnboundThis: true
 
-  # suggest using of const declaration for variables that are never modified after declared
+  # suggests using of const declaration for variables that are never modified after declared
   prefer-const:
     severirty: error
     options:
