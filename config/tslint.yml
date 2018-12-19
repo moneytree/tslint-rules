@@ -6,7 +6,7 @@ extends:
 rules:
   object-literal-sort-keys:
     severity: none
-  
+
   no-var-requires:
     severity: none
 
@@ -16,7 +16,7 @@ rules:
   max-line-length:
     severity: error
     options: [120]
-  
+
   no-boolean-literal-compare:
     severity: error
 
@@ -26,3 +26,6 @@ rules:
       grouped-imports: true
       import-sources-order: any
       named-imports-order: any
+
+  no-floating-promises:
+    severity: error
